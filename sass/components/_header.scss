@@ -1,0 +1,22 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  padding-top: 0px;
+  display: flex;
+  justify-content: space-between;
+  &__contact {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    column-gap: 50px;
+    padding-left: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  &__link {
+    color: #757575;
+    fill: #757575;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+  }
+}

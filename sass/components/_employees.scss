@@ -1,0 +1,15 @@
+.employees {
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 16px;
+  &__name {
+    font-weight: 500;
+    padding: 30px 99px 10px 99px;
+  }
+  &__job {
+    color: #757575;
+    font-weight: 400;
+  }
+}

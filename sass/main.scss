@@ -1,0 +1,32 @@
+@use "utils/vars" as *;
+@import "./components/employees";
+@import "./components/container";
+@import "./components/header";
+@import "./components/logo";
+@import "./components/nav";
+@import "./components/link";
+@import "./components/button";
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/main-section";
+@import "./components/textarea";
+@import "./components/regulation";
+@import "./components/submit-box";
+@import "./components/section";
+@import "./components/list-box";
+@import "./components/card";
+@import "./components/icon_box";
+@import "./components/footer";
+@import "./components/icon";
+@import "./components/menu";
+@import "./components/gallery";
+
+* {
+  margin: 0;
+}
+body {
+  font-family: "Roboto";
+  font-style: normal;
+  color: #212121;
+  margin: 0 auto;
+}

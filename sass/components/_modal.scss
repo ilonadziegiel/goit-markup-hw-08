@@ -1,0 +1,97 @@
+.modal {
+  width: 528px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: translate(-50%, -50%) scale(1);
+  transition-property: transform;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-in;
+  padding: 40px 40px 40px 40px;
+  &__button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: $secendaryfontColor;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    transition-property: fill, border;
+    transition-duration: $transitionDuration;
+    transition-timing-function: $transitionTiming;
+  }
+  &__button:hover,
+  &__button:focus {
+    cursor: pointer;
+    fill: $brandColor;
+    border: 1px solid $brandColor;
+  }
+  &__icon {
+    padding: 9px, 9px, 10px, 10px;
+  }
+  &__label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: #757575;
+    display: flex;
+    margin-bottom: 4px;
+    margin-top: 10px;
+  }
+  &__label-box {
+    display: flex;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 11px 0px 11px 12px;
+    max-height: 40px;
+    transition-property: border-color, fill;
+    transition-duration: $transitionDuration;
+    transition-timing-function: $transitionTiming;
+  }
+
+  &__input {
+    border: none;
+    width: 100%;
+  }
+  &__input:focus,
+  &__input:hover {
+    outline: none;
+  }
+  &__label-box:focus-within {
+    border-color: $brandColor;
+    fill: $brandColor;
+  }
+  &__textarea:focus-within {
+    border-color: $brandColor;
+    fill: $brandColor;
+  }
+  &__textarea {
+    display: flex;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 120px;
+    transition-property: border-color, fill;
+    transition-duration: $transitionDuration;
+    transition-timing-function: $transitionTiming;
+  }
+  &__header {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: center;
+  }
+}

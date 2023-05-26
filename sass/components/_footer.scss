@@ -1,0 +1,92 @@
+.footer {
+  background-color: #2f303a;
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 70px;
+    padding-top: 60px;
+  }
+  &__contact {
+    padding-bottom: 60px;
+  }
+  &__link {
+    color: $secendaryfontColor;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: $transitionDuration;
+    transition-timing-function: $transitionTiming;
+    padding-bottom: 9px;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $brandColor;
+  }
+  &__link--color {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &__address {
+    list-style-type: none;
+    padding-top: 20px;
+    padding-left: 0px;
+    display: inline-flexbox;
+    row-gap: 9px;
+  }
+  &__social {
+    display: inline-flexbox;
+  }
+  &__header {
+    text-transform: uppercase;
+    display: flex;
+    color: $secendaryfontColor;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    padding-top: 12px;
+  }
+  &__label {
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: #2f303a;
+    padding: 15px 0px 15px 16px;
+    display: flex;
+    transition-property: border-color;
+    transition-duration: $transitionDuration;
+    transition-timing-function: $transitionTiming;
+  }
+  &__label:hover {
+    border-color: $brandColor;
+  }
+  &__input {
+    outline: none;
+    border: none;
+    width: 340px;
+    background-color: #2f303a;
+    color: $secendaryfontColor;
+  }
+  &__button-box {
+    display: flex;
+    column-gap: 12px;
+  }
+  &__button {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    margin-top: 48px;
+    padding-left: 42px;
+  }
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  align-items: center;
+  letter-spacing: 0.03em;
+}

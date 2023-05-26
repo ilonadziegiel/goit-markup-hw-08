@@ -1,0 +1,49 @@
+.list-box {
+  display: flex;
+  list-style-type: none;
+  column-gap: 30px;
+  padding: 0;
+  &__image {
+    flex-basis: calc((100% - 60px) / 3);
+    position: relative;
+    max-width: 370px;
+    max-height: 294px;
+  }
+  &__description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: $secendaryfontColor;
+    text-align: center;
+    padding: 27px 90px 27px 90px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  &__business-card {
+    flex-basis: calc((100% - 90px) / 4);
+    list-style: none;
+    background-color: $secendaryfontColor;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__icon {
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    fill: #afb1b8;
+    cursor: pointer;
+    transition-property: fill;
+    transition-duration: $transitionDuration;
+    transition-timing-function: $transitionTiming;
+  }
+  &__icon:hover,
+  &__icon:focus {
+    fill: $brandColor;
+    border: 1px solid $brandColor;
+  }
+}

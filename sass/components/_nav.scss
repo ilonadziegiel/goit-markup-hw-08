@@ -1,0 +1,29 @@
+.nav {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  column-gap: 46px;
+  padding-left: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  flex-grow: 2;
+  &__link {
+    color: $primaryfontColor;
+  }
+  &__item {
+    position: relative;
+  }
+  &__item--active::after {
+    content: "";
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 53px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $brandColor;
+  }
+  &__item--width::after {
+    width: 58px;
+  }
+}

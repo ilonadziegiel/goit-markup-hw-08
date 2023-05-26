@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  row-gap: 10px;
+  max-width: 270px;
+  &__background {
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+  }
+  &__icon {
+    margin-top: 25px;
+    margin-right: 102px;
+    margin-bottom: 25px;
+    margin-left: 102px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-top: 20px;
+  }
+  &__description {
+    color: #757575;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
+}

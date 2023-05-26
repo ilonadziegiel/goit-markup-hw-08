@@ -1,0 +1,22 @@
+.icon-box {
+  margin: 20px 32px;
+  display: flex;
+  justify-content: space-between;
+  &__social {
+    fill: #afb1b8;
+    padding: 12px;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition-property: fill, background-color;
+    transition-duration: $transitionDuration;
+    transition-timing-function: $transitionTiming;
+  }
+  &__social:hover,
+  &__social:focus {
+    fill: $secendaryfontColor;
+    background-color: $brandColor;
+    cursor: pointer;
+  }
+}

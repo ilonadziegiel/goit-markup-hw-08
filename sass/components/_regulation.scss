@@ -1,0 +1,48 @@
+.regulation {
+  display: flex;
+  &__checkbox {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    margin-top: 25px;
+    margin-left: 14px;
+  }
+  &__check {
+    position: absolute;
+    pointer-events: none;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    left: -1px;
+    display: none;
+    width: 16px;
+    height: 16px;
+    background-color: $brandColor;
+    border-radius: 2px;
+    fill: $secendaryfontColor;
+  }
+  &__checkbox input[type="checkbox"] {
+    opacity: 0;
+    cursor: pointer;
+  }
+  &__checkbox input[type="checkbox"]:checked + .regulation__check {
+    display: flex;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    margin-top: 20px;
+    align-items: center;
+    color: #757575;
+    cursor: pointer;
+  }
+  &__link {
+    color: $brandColor;
+  }
+}

@@ -1,0 +1,29 @@
+.logo {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  flex-grow: 1;
+  &__web {
+    color: $brandColor;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+  }
+  &__studio {
+    color: #000000;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+  }
+  &__studio--color {
+    color: $secendaryfontColor;
+  }
+  &--padding {
+    padding: 0;
+  }
+}

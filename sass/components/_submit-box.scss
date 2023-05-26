@@ -1,0 +1,8 @@
+.submit-box {
+  display: flex;
+  justify-content: center;
+  &__button {
+    padding: 10px 76px 10px 76px;
+    margin-top: 30px;
+  }
+}
