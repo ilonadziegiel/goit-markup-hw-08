@@ -4,16 +4,44 @@
   list-style: none;
   row-gap: 10px;
   max-width: 270px;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    max-width: 450px;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    max-width: 354px;
+  }
+
   &__background {
     width: 270px;
     height: 120px;
     background-color: #f5f4fa;
+    @media screen and (max-width: 767px) {
+      width: 480px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      width: 354px;
+    }
   }
   &__icon {
     margin-top: 25px;
     margin-right: 102px;
     margin-bottom: 25px;
     margin-left: 102px;
+
+    @media screen and (max-width: 767px) {
+      margin-right: 192px;
+      margin-left: 192px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      margin-right: 144px;
+      margin-left: 144px;
+    }
   }
   &__title {
     font-weight: 700;

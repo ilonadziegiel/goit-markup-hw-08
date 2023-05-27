@@ -2,6 +2,12 @@
   margin: 20px 32px;
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 767px) {
+    margin-right: 122px;
+    margin-left: 122px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
   &__social {
     fill: #afb1b8;
     padding: 12px;

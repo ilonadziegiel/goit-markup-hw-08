@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+    <!--
     <header>
       <div class="container header">
         <nav class="logo">
@@ -53,6 +54,7 @@
         </ul>
       </div>
     </header>
+    -->
     <!--Menu-->
     <section class="main-section">
       <div class="main-section__box container">
@@ -191,7 +193,7 @@
       </div>
     </section>
     <!--Czym się zajmujemy-->
-    <section class="section">
+     <section class="section section--activity">
       <div class="container">
         <h2 class="section__header">Czym się zajmujemy</h2>
         <ul class="list-box">
@@ -231,12 +233,11 @@
         <h2 class="section__header">Nasz zespół</h2>
         <ul class="list-box">
           <li class="list-box__business-card">
-            <img
-              src="./images/team/JohnDoe1.jpg"
-              alt="zdjęcie Product Designer "
-              width="270"
-              height="260"
-            />
+            <picture>
+              <source media="(max-width:767px)" srcset="./images/team/JohnDoe1.jpg">
+              <source media="(max-width:1200px)" srcset="./images/team/JohnDoe1.jpg">
+              <img src="./images/team/JohnDoe1.jpg" alt="zdjęcie Product Designer" width="270px" height="260px">
+            </picture>
             <div class="employees">
               <p class="employees__name">John Doe</p>
               <p class="employees__job">Product Designer</p>
@@ -265,12 +266,11 @@
             </div>
           </li>
           <li class="list-box__business-card">
-            <img
-              src="./images/team/JohnDoe2.jpg"
-              alt="zdjęcie Fronted Developer"
-              width="270"
-              height="260"
-            />
+            <picture>
+              <source media="(max-width:767px)" srcset="./images/team/JohnDoe2.jpg">
+              <source media="(max-width:1200px)" srcset="./images/team/JohnDoe2.jpg">
+              <img src="./images/team/JohnDoe2.jpg" alt="zdjęcie Frontend Developer" width="270px" height="260px">
+            </picture>
             <div class="employees">
               <p class="employees__name">John Doe</p>
               <p class="employees__job">Fronted Developer</p>
@@ -299,12 +299,11 @@
             </div>
           </li>
           <li class="list-box__business-card">
-            <img
-              src="./images/team/JohnDoe3.jpg"
-              alt="Zdjęcie Marketingowca"
-              width="270"
-              height="260"
-            />
+            <picture>
+              <source media="(max-width:767px)" srcset="./images/team/JohnDoe3.jpg">
+              <source media="(max-width:1200px)" srcset="./images/team/JohnDoe3.jpg">
+              <img src="./images/team/JohnDoe3.jpg" alt="zdjęcie Marketingowca" width="270px" height="260px">
+            </picture>
             <div class="employees">
               <p class="employees__name">John Doe</p>
               <p class="employees__job">Marketing</p>
@@ -333,12 +332,11 @@
             </div>
           </li>
           <li class="list-box__business-card">
-            <img
-              src="./images/team/JohnDoe4.jpg"
-              alt="Zdjęcie UI Designer"
-              width="270"
-              height="260"
-            />
+            <picture>
+              <source media="(max-width:767px)" srcset="./images/team/JohnDoe4.jpg">
+              <source media="(max-width:1200px)" srcset="./images/team/JohnDoe4.jpg">
+              <img src="./images/team/JohnDoe4.jpg" alt="zdjęcie UI Designera" width="270px" height="260px">
+            </picture>
             <div class="employees">
               <p class="employees__name">John Doe</p>
               <p class="employees__job">UI Designer</p>
@@ -371,7 +369,7 @@
     </section>
 
     <!--Nasi Klienci-->
-    <section class="section">
+    <!--<section class="section">
       <div class="container">
         <h2 class="section__header">Nasi klienci</h2>
         <ul class="list-box">

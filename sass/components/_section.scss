@@ -1,9 +1,11 @@
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+
   &--padding {
     padding-bottom: 0px;
   }
+
   &__header {
     font-weight: 700;
     font-size: 36px;
@@ -14,5 +16,15 @@
   }
   &--team {
     background-color: #f5f4fa;
+  }
+  &--activity {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      display: none;
+    }
   }
 }
